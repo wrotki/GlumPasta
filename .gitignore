@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+*.db
+console.devmode.log
+sbt
+sbt-launch-0.13.1.jar
+sbt.bat
+target/
