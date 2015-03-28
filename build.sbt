@@ -31,7 +31,9 @@ libraryDependencies ++= {
     //"org.webjars" %% "webjars-play" % "2.3.0-2",
     "org.webjars" % "bootstrap" % "3.1.1-2",
     "org.webjars" % "webjars-locator" % "0.19",
-    "org.webjars" % "requirejs" % "2.1.16"
+    "org.webjars" % "requirejs" % "2.1.16",
+    "org.webjars" % "jquery" % "1.11.1",
+    "org.webjars" % "angularjs" % "1.3.15"
   )
 }
 
