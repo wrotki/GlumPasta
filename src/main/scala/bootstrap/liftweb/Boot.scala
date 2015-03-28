@@ -1,5 +1,6 @@
 package bootstrap.liftweb
 
+import code.boot.WebJars
 import net.liftweb._
 import util._
 import Helpers._
@@ -21,6 +22,7 @@ import net.liftmodules.JQueryModule
  */
 class Boot {
   def boot {
+    WebJars.serve
     if (!DB.jndiJdbcConnAvailable_?) {
       val vendor = 
 	new StandardDBVendor(Props.get("db.driver") openOr "org.h2.Driver",
@@ -40,6 +42,7 @@ class Boot {
 
     // where to search snippet
     LiftRules.addToPackages("code")
+    LiftRules.addToPackages("code.boot")
 
     // Build SiteMap
     def sitemap = SiteMap(

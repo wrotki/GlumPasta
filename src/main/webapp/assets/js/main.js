@@ -1,5 +1,3 @@
-foop
-
 jQuery(document).ready(function($) {
 
     /* ======= Scrollspy ======= */

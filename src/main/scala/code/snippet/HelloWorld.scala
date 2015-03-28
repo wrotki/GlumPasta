@@ -1,5 +1,7 @@
 package code 
-package snippet 
+package snippet
+
+import net.liftweb.http.LiftRules
 
 import scala.xml.{NodeSeq, Text}
 import net.liftweb.util._
@@ -13,6 +15,8 @@ class HelloWorld {
 
   // replace the contents of the element with id "time" with the date
   def howdy = "#time *" #> date.map(_.toString ++ " 2 hour")//date.map(_.toString)
+
+  def foojs = LiftRules.getResource("/META-INF/resources/webjars/jquery/2.0.0/foo.js")
 
   /*
    lazy val date: Date = DependencyFactory.time.vend // create the date via factory
